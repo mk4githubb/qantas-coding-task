@@ -2,22 +2,6 @@
 
 This project is a React + TypeScript application bootstrapped with Vite. It demonstrates a searchable and paginated list of airports, with details for each airport, using the Qantas API.
 
-## Features
-- List and search airports
-- View detailed airport information
-- Pagination for large airport lists
-- Data fetching with React Query
-- UI components with Material-UI (MUI)
-- TypeScript for type safety
-- ESLint and Prettier for code quality and formatting
-- Unit tests with Jest and React Testing Library
-
-## Getting Started
-
-### Prerequisites
-- Node.js (v18 or later recommended)
-- npm
-
 ## Demo
 
 ### Working App
@@ -25,6 +9,13 @@ https://github.com/user-attachments/assets/ce84722a-7dc2-4061-b07e-060cc668a3fe
 
 ### Error Handling
 https://github.com/user-attachments/assets/72df4f60-4f8b-4ee5-a55a-6314e7799180
+
+
+## Getting Started
+
+### Prerequisites
+- Node.js (v18 or later recommended)
+- npm
 
 ### Installation
 ```bash
@@ -60,6 +51,16 @@ Run all unit tests:
 ```bash
 npm test
 ```
+
+## Features
+- List and search airports
+- View detailed airport information
+- Pagination for large airport lists
+- Data fetching with React Query
+- UI components with Material-UI (MUI)
+- TypeScript for type safety
+- ESLint and Prettier for code quality and formatting
+- Unit tests with Jest and React Testing Library
 
 ## Project Structure
 - `src/components/` – React components (AirportList, AirportDetails, Loader, etc.)
