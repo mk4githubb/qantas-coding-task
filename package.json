@@ -10,7 +10,8 @@
     "preview": "vite preview",
     "prettier": "prettier --write .",
     "start": "vite",
-    "test": "jest"
+    "test": "jest",
+    "deploy": "vite gh-pages"
   },
   "dependencies": {
     "@emotion/react": "^11.14.0",
@@ -46,6 +47,7 @@
     "ts-jest": "^29.4.0",
     "typescript": "~5.8.3",
     "typescript-eslint": "^8.30.1",
-    "vite": "^6.3.5"
+    "vite": "^6.3.5",
+    "vite-plugin-gh-pages": "^1.0.1"
   }
 }

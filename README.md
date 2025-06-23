@@ -1,54 +1,68 @@
-# React + TypeScript + Vite
+# Qantas Coding Challenge
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project is a React + TypeScript application bootstrapped with Vite. It demonstrates a searchable and paginated list of airports, with details for each airport, using the Qantas API.
 
-Currently, two official plugins are available:
+## Features
+- List and search airports
+- View detailed airport information
+- Pagination for large airport lists
+- Data fetching with React Query
+- UI components with Material-UI (MUI)
+- TypeScript for type safety
+- ESLint and Prettier for code quality and formatting
+- Unit tests with Jest and React Testing Library
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Getting Started
 
-## Expanding the ESLint configuration
+### Prerequisites
+- Node.js (v18 or later recommended)
+- npm
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
-
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-});
+### Installation
+```bash
+npm install
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x';
-import reactDom from 'eslint-plugin-react-dom';
-
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-});
+### Development
+Start the development server:
+```bash
+npm start
 ```
+
+### Build
+Build the app for production:
+```bash
+npm run build
+```
+
+### Linting
+Run ESLint to check for code issues:
+```bash
+npm run lint
+```
+
+### Formatting
+Format your codebase with Prettier:
+```bash
+npm run prettier
+```
+
+### Testing
+Run all unit tests:
+```bash
+npm test
+```
+
+## Project Structure
+- `src/components/` – React components (AirportList, AirportDetails, Loader, etc.)
+- `src/hooks/` – Custom React hooks (e.g., useGetAirports)
+- `src/types/` – TypeScript type definitions
+- `src/assets/` – Static assets
+
+## Configuration
+- `.prettierrc` – Prettier configuration
+- `eslint.config.js` – ESLint configuration
+- `jest.config.cjs` – Jest configuration
+
+## License
+This project is for demonstration purposes only.
