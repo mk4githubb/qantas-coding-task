@@ -3,7 +3,7 @@ import { MemoryRouter } from 'react-router-dom';
 import AirportWrapper from '../AirportWrapper';
 
 jest.mock('../../hooks/useGetAirports.ts', () => ({
-  useGetAirports: () => ({ data: [{ airportCode: 'ABC' }], isLoading: false, isError: false })
+  useGetAirports: () => ({ data: [{ airportCode: 'ABC' }], isLoading: false, isError: false }),
 }));
 
 describe('AirportWrapper', () => {
@@ -11,7 +11,7 @@ describe('AirportWrapper', () => {
     render(
       <MemoryRouter>
         <AirportWrapper />
-      </MemoryRouter>
+      </MemoryRouter>,
     );
     // No visible output, but should not crash
     expect(true).toBe(true);

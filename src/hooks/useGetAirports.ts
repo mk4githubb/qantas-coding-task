@@ -3,7 +3,7 @@ import axios from 'axios';
 import type { Airport } from '../types/Airport';
 
 const fetchAirports = async () => {
-  try{
+  try {
     // Fetching airport data from the Qantas API
     const response = await axios.get<Airport[]>('https://api.qantas.com/flight/refData/airport');
     console.log('Airports fetched successfully:', response.data);
