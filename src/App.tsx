@@ -3,7 +3,6 @@ import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
 import AirportListPage from './components/AirportList';
 import AirportDetailsPage from './components/AirportDetails';
 import AirportWrapper from './components/AirportWrapper';
-// import AirportDetailsPage from './pages/AirportDetails';
 
 // Create a QueryClient instance
 const queryClient = new QueryClient();
