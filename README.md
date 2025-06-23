@@ -22,6 +22,7 @@ This project is a React + TypeScript application bootstrapped with Vite. It demo
 
 ![Working Responsive App](https://github.com/user-attachments/assets/ce84722a-7dc2-4061-b07e-060cc668a3fe)
 
+
 ![Network Error Handling](https://github.com/user-attachments/assets/72df4f60-4f8b-4ee5-a55a-6314e7799180)
 
 ### Installation
